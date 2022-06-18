@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+body { 
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Noto Sans', sans-serif;
+    overflow: hidden;
+    color: white;
+    transition: 0.6s;
+}
+.wrapper-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+}
+.wrapper-info { 
+    text-align: center;
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.wrapper-info h2 {
+    font-size: 3em;
+    font-weight: 300;
+}
+.wrapper-info h1 { 
+    font-weight: 400;
+    font-size: 1.5em;
+}
+.sun-or-moon { 
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    animation: 0.6s;
+}
+.mountain{ 
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.mountain img {
+    width: 100%;
+}
+#status { 
+    text-transform: uppercase;
+    font-size: 1.0em;
+    font-weight: 100;
+}
+.sun-or-moon .moon {
+    width: 200px;
+    height: 200px;
+    background: rgb(221, 221, 221);
+    box-shadow: 0px 0px 100px white;
+    border-radius: 300px;
+    transition: 0.7s;
+    margin-top: 500px;
+    display: none;
+}
+.sun-or-moon .sun { 
+    width: 200px;
+    height: 200px;
+    background: rgb(250, 248, 144);
+    box-shadow: 0px 0px 100px rgb(250, 248, 144);
+    border-radius: 300px;
+    transition: 0.7s;
+    display: none;
+    margin-top: 500px;
+
+}
+.sun-or-moon .sunset { 
+    width: 150px;
+    height: 150px;
+    background: rgb(255, 127, 53);
+    box-shadow: 0px 0px 100px rgb(255, 127, 53);
+    border-radius: 300px;
+    margin-top: 50px;
+    transition: 0.7s;
+    display: none;
+    margin-top: 500px;
+}
+
+.wrapper-info .more-info {
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 60%;
+    position: absolute;
+    margin: 0 auto;
+    bottom: -150px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    flex-wrap: wrap;
+    
+    transition: 0.7s;
+}
+.wrapper-info .more-info i { 
+    font-size: 1.3em;
+    color: rgb(221, 221, 221);
+}
+.wrapper-info .more-info p {
+    font-weight: 100;
+    font-size: 1.3em;
+}
+.wrapper-info .icon-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+.container-city {
+    margin-top: -500px;
+    transition: 0.7s;
+}
+footer {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    z-index: 10000;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+    color: gray;
+}
+.wrapper-info .icon-box .description{
+    position: absolute;
+    margin-top: -150px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+    transition: 0.7s;
+}
+.wrapper-info .icon-box .description::before{
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgba(0, 0, 0, 0.5);
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    bottom:-20px; 
+}
+.wrapper-info .icon-box:hover > .description{
+    display: block;
+    transition: 0.3s;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrapper-main">
+        <div class="wrapper-info">
+            <div class="container-city">
+                <h2 id="temp"></h2>
+                <h1 id="city"></h1>
+                <h1 id="status"></h1>
+            </div>
+            <div class="more-info">
+                <div class="icon-box">
+                    <i class="fa-solid fa-user"></i>
+                    <p id="feels-like"></p>
+                    <div class="description">
+                        <p>Sensación térmica</p>
+                    </div>
+                </div>
+                <div class="icon-box">
+                    <i class="fa-solid fa-water"></i>
+                    <p id="humidity"></p> 
+                    <div class="description">
+                        <p>Humedad</p>
+                    </div>
+                </div>
+                <div class="icon-box">
+                    <i class="fa-solid fa-wind"></i>
+                    <p id="wind"></p> 
+                    <div class="description">
+                        <p>Ráfagas de</p>
+                    </div>
+                </div>
+                <div class="icon-box">
+                    <i class="fa-solid fa-cloud"></i>
+                    <p id="clouds"></p> 
+                    <div class="description">
+                        <p>Nubes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sun-or-moon">
+            <div class="moon"></div>
+            <div class="sun"></div>
+            <div class="sunset" ></div>
+        </div>
+        <div class="mountain">
+            <img src="./mountain.png" alt="mountain" id="mountain">
+        </div>
+    </div>
+    <footer>
+        <p>Actualización automática cada 5 minutos</p>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
